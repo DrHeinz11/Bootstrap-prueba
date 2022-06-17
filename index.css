@@ -32,6 +32,7 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 20px;
   height: 50px;
   width: 100%;
   position: fixed;
@@ -50,7 +51,6 @@ img {
 .navbar__link {
   display: flex;
   gap: 15px;
-  width: 50%;
   height: auto;
   align-items: flex-end;
   justify-content: space-between;
@@ -111,28 +111,29 @@ img {
   padding: 0 15px;
   justify-items: center;
 }
-
+.card__section--article {
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+}
 .carrousel__img {
   border-radius: 25px;
 }
-.card__section--container{
-    margin: 25px 0;
-    height: 100vh;
+.card__section--container {
+  margin: 25px 0;
 }
-.card__section--head{
-    text-align: center;
-    text-decoration: underline;
+.card__section--head {
+  text-align: center;
+  text-decoration: underline;
 }
-.card__section--article{
-    margin: 15px 0;
+.card__section--article {
+  margin: 15px 0;
 }
-.card__section{
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
+.card__section {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }
 .card__title {
-    font-size: .8rem;
+  font-size: 0.8rem;
   text-align: center;
   font-weight: 500;
   text-transform: uppercase;
@@ -158,3 +159,53 @@ img {
   border: 1px solid black;
   padding: 5px 10px;
 }
+.input__container {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  padding: 0 15px;
+}
+.input__title {
+  text-align: center;
+}
+.ubicacion__container {
+  margin: 0 auto;
+  max-width: 100%;
+}
+.ubicacion__container > iframe {
+  max-width: 100%;
+  border: none;
+  border-radius: 25px;
+}
+
+.footer__container {
+  display: grid;
+  gap: 15px;
+  padding: 0 15px;
+  margin-top: 10px;
+  padding-top: 15px;
+  border-top: 1px solid grey;
+}
+
+.img__footer {
+  width: 8em;
+}
+.footer__copy--container {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+}
+
+.footer__copyright {
+  font-size: .75rem;
+  justify-self: center;
+  margin-bottom: 10px;
+}
+.footer__copyright--anchor{
+  font-size: .75rem;
+  font-weight: 700;
+}
+.footer__copyright--anchor:hover{
+    border-bottom: 2px solid violet;
+  }
+  
