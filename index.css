@@ -1,9 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&family=Poppins:wght@300;400&display=swap');
 :root {
   /**Font*/
-  --font-body: "Lato", sans-serif;
-  --font-heading: "Segoe UI", Tahoma;
+  --font-body: 'Poppins', sans-serif;
+  --font-heading: 'Nunito', sans-serif;
   /**Colors*/
 }
 
@@ -20,14 +19,9 @@ html {
   list-style: none;
   text-transform: capitalize;
 }
-body {
-  margin: auto;
-  max-width: 1200px;
-}
 img {
   max-width: 100%;
 }
-
 .navbar__container {
   display: flex;
   flex-direction: row;
@@ -131,12 +125,14 @@ img {
   display: flex;
   gap: 10px;
   flex-direction: column;
+  padding: 25px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 .card__title {
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: center;
   font-weight: 500;
-  text-transform: uppercase;
   font-family: var(--font-heading);
 }
 .card__img {
@@ -197,15 +193,14 @@ img {
 }
 
 .footer__copyright {
-  font-size: .75rem;
+  font-size: 0.75rem;
   justify-self: center;
   margin-bottom: 10px;
 }
-.footer__copyright--anchor{
-  font-size: .75rem;
+.footer__copyright--anchor {
+  font-size: 0.75rem;
   font-weight: 700;
 }
-.footer__copyright--anchor:hover{
-    border-bottom: 2px solid violet;
-  }
-  
+.footer__copyright--anchor:hover {
+  border-bottom: 2px solid violet;
+}
